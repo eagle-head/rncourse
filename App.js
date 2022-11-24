@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { StatusBar } from "expo-status-bar";
-import { Iconicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 import CategoriesScreen from "./screens/CategoriesScreen";
 import MealsOverviewScreen from "./screens/MealsOverviewScreen";
@@ -32,7 +32,7 @@ function DrawerNavigation() {
         options={{
           title: "All Categories",
           drawerIcon: ({ color, size }) => (
-            <Iconicons name="list" color={color} size={size} />
+            <Ionicons name="list" color={color} size={size} />
           ),
         }}
       />
@@ -41,7 +41,7 @@ function DrawerNavigation() {
         component={FavoriteScreen}
         options={{
           drawerIcon: ({ color, size }) => (
-            <Iconicons name="star" color={color} size={size} />
+            <Ionicons name="star" color={color} size={size} />
           ),
         }}
       />
